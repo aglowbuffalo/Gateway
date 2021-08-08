@@ -1,0 +1,166 @@
+.min-width-600{
+    min-width: 600px;
+}
+
+body{
+    all: unset;
+    background-color: #fff9f7;
+}
+
+.header {
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#header-title{
+    margin-left: 20px;
+}
+.nav-menu{
+    list-style: none;
+    display: flex;
+    margin-right: 20px;
+}
+.link-text{
+    color: #000;
+    text-decoration: none;
+}
+
+.nav-menu li a{
+    background-color: rgb(197, 194, 194) ;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 10%;
+    border-color: black;
+    border-style: solid;
+}
+.nav-menu li a:hover{
+    background-color: rgb(192, 29, 37) ;
+    color: #fff;
+}
+
+footer {
+    background-color: #fff;
+    width: 100%;
+    line-height: 1.2;
+    padding: 1px 0;
+
+}
+
+.text-center{
+    text-align: center;
+}
+
+.gray-linear-gradient{
+    background: linear-gradient(rgb(235, 227, 227), rgb(209, 201, 202), rgb(235, 227, 227));
+}
+
+.main-container{
+    display: block;
+    width: 60%;
+    background-color: #fff;
+    min-height: 700px;
+    margin: 0 auto;
+}
+
+.title{
+    margin: 0;
+    padding: 0.5em;
+    font-size: 1.5em;
+}
+.position-relative{
+    position: relative;
+    width: 100%;
+}
+.home-text{
+    font-size: 1.5em;
+    padding: 10px 30px;
+}
+/* START employees tile */
+
+.employee-list{
+    list-style: none;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-inline-start:0%;
+    justify-content: flex-start;
+    position: relative;
+    /* align-items: center; */
+
+}
+.employee-list li{
+    width: 23%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    min-width: 300px;
+
+}
+.employee-list li section{
+    border-style: solid;
+    border-color: rgb(116, 122, 122);
+    border-radius: 5%;
+    overflow: hidden;
+}
+.employee-upper-bg{
+    background: linear-gradient(rgb(231, 234, 240), rgb(192, 195, 238), rgb(231, 234, 240));
+    height: 65px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.circular-landscape {
+    /* display: inline-block; */
+    /* position: relative; */
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    top: 15px;
+    right: 0;
+    left: 0;
+    align-items: center;
+
+  }
+
+.circular-landscape img {
+    width: auto;
+    height: 100%;
+
+    /* margin-left: -50px; */
+  }
+
+.employee-info{
+    height: 250px;
+    padding-top: 80px;
+    /* background-color: darkcyan; */
+    text-align: center;
+
+}
+.employee-name {
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+.employee-company {
+    font-size: 1.4rem;
+    font-weight: 400;
+    display: block;
+}
+.employee-bio {
+    display: block;
+    margin-top: 10px;
+}
+
+/* END employees tile*/
+
+
