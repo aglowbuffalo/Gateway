@@ -7,10 +7,7 @@
             <h4 class="title">Employees' details</h4>
 
             <div class="employee-container">
-                <ul class="employee-list">
                     @include('employees.list')
-
-                </ul>
             </div>
         </div>
     </div>

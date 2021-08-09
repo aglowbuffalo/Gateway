@@ -13,7 +13,7 @@ class GetGatewayApiData extends Controller
     public $perPage = 20;
 
     public function index(){
-        dd('aaaaa');
+        // dd('aaaaa');
     }
 
     public function getListFromApi(){
@@ -75,7 +75,7 @@ class GetGatewayApiData extends Controller
     }
 
     /**
-     *
+     *Use db to show Api data
      */
     public function getListFromDB(){
 
