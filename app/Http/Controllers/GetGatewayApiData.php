@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Functional\GatewayApi\GetDataGatewayApi;
-
+use App\Models\Employee;
 use function PHPUnit\Framework\isEmpty;
 
 class GetGatewayApiData extends Controller
@@ -79,5 +79,22 @@ class GetGatewayApiData extends Controller
      */
     public function getListFromDB(){
 
+
+        $employees =  Employee::paginate($this->perPage);
+        //todo Insert and update need to be done with cron job
+        if(!$employees->total()){
+            $getDataApi = new GetDataGatewayApi();
+            $data  = $getDataApi->getJsonFromResponse();
+
+            if(!empty($data)){
+                $employees = Employee::insert($data);
+            }
+            $employees =  Employee::paginate($this->perPage);
+
+        }
+
+        return view('employees.db-list', [
+            'employees' => $employees
+        ]);
     }
 }

@@ -41,12 +41,11 @@
                             $( ".employee-list" ).append( emp_list );
                             //@$# +check if return result is empty
                             if ($('#list-error').length < 1) {
-                                console.log(page);
+                                // console.log(page);
                                 page++;
                             }
                             //@$# -
                             if (typeof emp_list['lastPagee'] === 'undefined') {
-                            // console.log( emp_list[['lastPagee']]);
                                 allowAjax = true;
                             }
                         },

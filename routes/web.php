@@ -21,4 +21,4 @@ Route::get('/', function () {
 
 Route::get('/no-db', [GetGatewayApiData::class, 'getListFromApi']);
 Route::POST('/e-list', [GetGatewayApiData::class, 'getEmployeesListView']);
-Route::get('/e-list', [GetGatewayApiData::class, 'getEmployeesListView']);
+Route::get('/e-list-db', [GetGatewayApiData::class, 'getListFromDB']);

@@ -20,7 +20,7 @@
                             <a href="{{ url('no-db') }}" class="nav-link">no DB</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">DB</a>
+                            <a href="{{ url('e-list-db') }}" class="nav-link">DB</a>
                         </li>
 
                     </ul>
