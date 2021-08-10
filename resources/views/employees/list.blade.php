@@ -12,7 +12,13 @@
             <div class="employee-info">
                 <span class="employee-name">{{ $employees[$i]['name'] }}</span><br>
                 <span class="employee-company">{{ $employees[$i]['company'] }}</span>
-                <span class="employee-bio ">{{ $employees[$i]['bio'] }}</span>
+                <span class="employee-bio ">
+                    @if($employees[$i]['bio'])
+                        {{ $employees[$i]['bio'] }}
+                    @else
+                        N/A
+                    @endif
+                </span>
             </div>
         </section>
     </li>
